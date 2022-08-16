@@ -1,0 +1,48 @@
+I, [2022-08-15T23:29:18.435628 #17294]  INFO -- default-Ubuntu: -----> Verifying <default-Ubuntu>...
+I, [2022-08-15T23:29:18.437046 #17294]  INFO -- default-Ubuntu: Preparing files for transfer
+I, [2022-08-15T23:29:18.684439 #17294]  INFO -- default-Ubuntu: -----> Installing Busser (busser)
+I, [2022-08-15T23:29:21.714571 #17294]  INFO -- default-Ubuntu: Fetching busser-0.8.0.gem
+I, [2022-08-15T23:29:23.824891 #17294]  INFO -- default-Ubuntu: Fetching thor-0.19.0.gem
+I, [2022-08-15T23:29:23.908669 #17294]  INFO -- default-Ubuntu: Successfully installed thor-0.19.0
+I, [2022-08-15T23:29:23.956944 #17294]  INFO -- default-Ubuntu: Successfully installed busser-0.8.0
+I, [2022-08-15T23:29:23.957001 #17294]  INFO -- default-Ubuntu: 2 gems installed
+I, [2022-08-15T23:29:24.114304 #17294]  INFO -- default-Ubuntu: -----> Installing Busser plugin: busser-serverspec
+I, [2022-08-15T23:29:28.267375 #17294]  INFO -- default-Ubuntu: Plugin serverspec installed (version 0.5.10)
+I, [2022-08-15T23:29:28.273804 #17294]  INFO -- default-Ubuntu: -----> Running postinstall for serverspec plugin
+I, [2022-08-15T23:29:30.023866 #17294]  INFO -- default-Ubuntu: Suite path directory /tmp/verifier/suites does not exist, skipping.
+I, [2022-08-15T23:29:30.029423 #17294]  INFO -- default-Ubuntu: Transferring files to <default-Ubuntu>
+I, [2022-08-15T23:29:30.281101 #17294]  INFO -- default-Ubuntu: -----> Running serverspec test suite
+I, [2022-08-15T23:29:30.286650 #17294]  INFO -- default-Ubuntu: -----> Installing Serverspec..
+I, [2022-08-15T23:29:35.193705 #17294]  INFO -- default-Ubuntu: Fetching net-telnet-0.1.1.gem
+I, [2022-08-15T23:29:35.264376 #17294]  INFO -- default-Ubuntu: Fetching net-scp-3.0.0.gem
+I, [2022-08-15T23:29:35.379317 #17294]  INFO -- default-Ubuntu: Fetching rspec-expectations-3.11.0.gem
+I, [2022-08-15T23:29:35.824910 #17294]  INFO -- default-Ubuntu: Fetching rspec-3.11.0.gem
+I, [2022-08-15T23:29:36.267394 #17294]  INFO -- default-Ubuntu: Fetching sfl-2.3.gem
+I, [2022-08-15T23:29:36.300598 #17294]  INFO -- default-Ubuntu: Fetching rspec-its-1.3.0.gem
+I, [2022-08-15T23:29:36.339125 #17294]  INFO -- default-Ubuntu: Fetching net-ssh-6.1.0.gem
+I, [2022-08-15T23:29:36.405244 #17294]  INFO -- default-Ubuntu: Fetching rspec-mocks-3.11.1.gem
+I, [2022-08-15T23:29:36.834336 #17294]  INFO -- default-Ubuntu: Fetching specinfra-2.83.3.gem
+I, [2022-08-15T23:29:36.886901 #17294]  INFO -- default-Ubuntu: Fetching diff-lcs-1.5.0.gem
+I, [2022-08-15T23:29:36.935739 #17294]  INFO -- default-Ubuntu: Fetching serverspec-2.42.0.gem
+I, [2022-08-15T23:29:37.010932 #17294]  INFO -- default-Ubuntu: Fetching multi_json-1.15.0.gem
+I, [2022-08-15T23:29:37.498854 #17294]  INFO -- default-Ubuntu: -----> serverspec installed (version 2.42.0)
+I, [2022-08-15T23:29:37.590228 #17294]  INFO -- default-Ubuntu: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.11.0/lib:/tmp/verifier/gems/gems/rspec-core-3.11.0/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+I, [2022-08-15T23:29:37.965936 #17294]  INFO -- default-Ubuntu: 
+I, [2022-08-15T23:29:37.967216 #17294]  INFO -- default-Ubuntu: Package "nginx"
+I, [2022-08-15T23:29:38.095681 #17294]  INFO -- default-Ubuntu: [32m  is expected to be installed[0m
+I, [2022-08-15T23:29:38.095733 #17294]  INFO -- default-Ubuntu: 
+I, [2022-08-15T23:29:38.095743 #17294]  INFO -- default-Ubuntu: File "/etc/nginx/nginx.conf"
+I, [2022-08-15T23:29:38.104235 #17294]  INFO -- default-Ubuntu: [32m  is expected to contain "proxy_pass http\\:\\/\\/cluster"[0m
+I, [2022-08-15T23:29:38.106768 #17294]  INFO -- default-Ubuntu: 
+I, [2022-08-15T23:29:38.106817 #17294]  INFO -- default-Ubuntu: Service "nginx"
+I, [2022-08-15T23:29:38.118461 #17294]  INFO -- default-Ubuntu: [32m  is expected to be enabled[0m
+I, [2022-08-15T23:29:38.133472 #17294]  INFO -- default-Ubuntu: [32m  is expected to be running[0m
+I, [2022-08-15T23:29:38.133522 #17294]  INFO -- default-Ubuntu: 
+I, [2022-08-15T23:29:38.134700 #17294]  INFO -- default-Ubuntu: Port "80"
+I, [2022-08-15T23:29:38.153169 #17294]  INFO -- default-Ubuntu: [32m  is expected to be listening[0m
+I, [2022-08-15T23:29:38.153222 #17294]  INFO -- default-Ubuntu: 
+I, [2022-08-15T23:29:38.153234 #17294]  INFO -- default-Ubuntu: Finished in 0.18556 seconds (files took 0.2843 seconds to load)
+I, [2022-08-15T23:29:38.153242 #17294]  INFO -- default-Ubuntu: [32m5 examples, 0 failures[0m
+I, [2022-08-15T23:29:38.153250 #17294]  INFO -- default-Ubuntu: 
+I, [2022-08-15T23:29:38.173512 #17294]  INFO -- default-Ubuntu: Downloading files from <default-Ubuntu>
+I, [2022-08-15T23:29:38.176423 #17294]  INFO -- default-Ubuntu: Finished verifying <default-Ubuntu> (0m20.51s).
